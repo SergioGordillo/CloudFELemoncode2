@@ -11,6 +11,7 @@ export const RouterComponent = () => {
                 <Route path="/" element={<LoginPage />} />
                 <Route path="/list" element={<ListPage />} />
                 <Route path="/detail/:id" element={<DetailPage />} />
+                <Route path="*" element={<LoginPage />} />
             </Routes>
         </Router>
     );
