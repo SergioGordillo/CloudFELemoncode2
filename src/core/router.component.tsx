@@ -5,14 +5,13 @@ import { ListPage } from "../components/list";
 import { DetailPage } from "../components/detail";
 
 export const RouterComponent = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/list" element={<ListPage />} />
-        <Route path="/detail/:id" element={<DetailPage />} />
-        <Route path="*" element={<LoginPage />} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<LoginPage />} />
+                <Route path="/list" element={<ListPage />} />
+                <Route path="/detail/:id" element={<DetailPage />} />
+            </Routes>
+        </Router>
+    );
 };
